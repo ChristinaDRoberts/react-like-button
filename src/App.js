@@ -26,10 +26,12 @@ class Counter extends Component{
     constructor(props){
         super(props);
         this.state = {clicks: 0}
+        this.likes = this.likes.bind(this);
 
     }
 
-     Likes() {
+     likes() {
+        console.log('here');
         this.setState((prevState) => ({
       	   clicks: prevState.clicks + 1
         }));
@@ -45,9 +47,9 @@ class Counter extends Component{
         //             <button onClick={this.Likes.bind(this)}>{this.state.clicks} Likes </button>)
         //     }
         return(
-            <button onClick={this.Likes.bind(this)}>{this.state.clicks} Likes </button> )
-            // {/*<button onClick={this.likes.bind(this)}>{this.state.clicks === 1 ? 'Like', 'Likes'}</button>*/}
-        
+
+            <button onClick={this.likes}>{this.state.clicks}<span>{this.state.clicks === 1 ? 'Like' : 'Likes'}</span></button>)
+
             // {button}
         }
     }
