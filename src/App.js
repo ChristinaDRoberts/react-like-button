@@ -36,16 +36,19 @@ class Counter extends Component{
      }
 
     render(){
-            // if ({this.setstate.clicks = 1} ){
-            //     return(
-            //     <button onClick={this.Likes.bind(this)}>{this.state.clicks} Like</button>)
-            // }else{
-            //     return(
-            //         <button onClick={this.Likes.bind(this)}>{this.state.clicks} Likes </button>)
-            // }
+        // let button : text
+        //     if ({this.setstate.clicks = 1} ){
+        //         return(
+        //         <button onClick={this.Likes.bind(this)}>{this.state.clicks} Like</button>)
+        //     }else{
+        //         return(
+        //             <button onClick={this.Likes.bind(this)}>{this.state.clicks} Likes </button>)
+        //     }
         return(
             <button onClick={this.Likes.bind(this)}>{this.state.clicks} Likes </button> )
-
+            // {/*<button onClick={this.likes.bind(this)}>{this.state.clicks === 1 ? 'Like', 'Likes'}</button>*/}
+        
+            // {button}
         }
     }
 
